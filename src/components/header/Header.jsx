@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Header.module.css"
+import "./Header.css"
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
                 <ul className="nav__list grid">
                     <li className="nav__item">
                         <a href="#home" className="nav__link">
-                            <i className="uil uil-estate nav__icon"></i> Home
+                            <i className="uil uil-estate nav__icon active-link"></i> Home
                         </a>
                     </li>
                     <li className="nav__item">
@@ -34,7 +34,10 @@ const Header = () => {
                         </a>
                     </li>
                 </ul>
-
+                <i className='uil uil-times nav__close'></i>
+            </div>
+            <div className="nav__toggle">
+                <i className='uil uil-apps'></i>
             </div>
         </nav>
     </header>
