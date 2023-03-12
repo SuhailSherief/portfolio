@@ -14,14 +14,14 @@ function Services() {
             <div className="services__content">
                 <div>
                     <i className="uil uil-web-grid services__icon"></i>
-                    <h3 className="services__title">Product <br /> Developer</h3>
+                    <h3 className="services__title">Fullstack <br /> Developer</h3>
                 </div>
                 <span className="services__button" onClick={() => toggleTab(1)}>View More <i className="uil uil-arrow-right services__button-icon"></i></span>
                 <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
                         <i className="uil uil-times services__modal-close" onClick={() => toggleTab(0)}></i>
-                        <h3 className="services__modal-description">Product Developer</h3>
-                        <p className="services__modal-description">Service with more than 3 years of experience. Providing quality work to clients on companies.</p>
+                        <h3 className="services__modal-description">Fullstack Developer</h3>
+                        <p className="services__modal-description">Service with more than 2 years of experience. Providing quality work to clients on companies.</p>
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
@@ -42,26 +42,26 @@ function Services() {
             <div className="services__content">
                 <div>
                     <i className="uil uil-arrow services__icon"></i>
-                    <h3 className="services__title">Ui/Ux <br /> Designer</h3>
+                    <h3 className="services__title">Blockchain <br /> Enthusiast</h3>
                 </div>
                 <span className="services__button" onClick={() => toggleTab(2)}>View More <i className="uil uil-arrow-right services__button-icon"></i></span>
                 <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
                         <i className="uil uil-times services__modal-close" onClick={() => toggleTab(0)}></i>
-                        <h3 className="services__modal-description">Ui/Ux Designer</h3>
-                        <p className="services__modal-description">Service with more than 3 years of experience. Providing quality work to clients on companies.</p>
+                        <h3 className="services__modal-description">Blockchain Enthusiast</h3>
+                        <p className="services__modal-description">Service with more than 1 year of experience. Providing quality work to clients on companies.</p>
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I develop API and Applications.</p>
+                                <p className="services__modal-info">I develop blockchain based solutions.</p>
                             </li>
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">Web page development.</p>
+                                <p className="services__modal-info">Crypto wallet development.</p>
                             </li>
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I create ux element interactions.</p>
+                                <p className="services__modal-info">Ordinals inscription in BTC chain.</p>
                             </li>
                         </ul>
                     </div>
@@ -81,15 +81,15 @@ function Services() {
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I develop API and Applications.</p>
+                                <p className="services__modal-info">I create models using photoshop and after effects.</p>
                             </li>
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">Web page development.</p>
+                                <p className="services__modal-info">Visual effects for montages.</p>
                             </li>
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I create ux element interactions.</p>
+                                <p className="services__modal-info">Expertise in vegas, pr, ae.</p>
                             </li>
                         </ul>
                     </div>
