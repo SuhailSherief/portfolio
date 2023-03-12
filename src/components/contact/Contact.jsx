@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "./contact.css";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_qrafy7u', 'template_1h0snrf', form.current, 'JkkoRjGmuGrWs90yi').then(e.target.reset());
+  };
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
@@ -20,7 +29,7 @@ const Contact = () => {
                 href="mailto:suhailsherief2002@gmail.com.com"
                 className="contact__button"
               >
-                Write me{" "}
+                Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -32,7 +41,7 @@ const Contact = () => {
                 href="https://api.whatsapp.com/send/?phone=%2B918072580177&text=Hello,%20nice%20to%20meet%20you!&type=phone_number&app_absent=0"
                 className="contact__button"
               >
-                Write me{" "}
+                Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -41,7 +50,7 @@ const Contact = () => {
               <h2 className="contact__card-title">Discord</h2>
               <span className="contact__card-data">シェリエフ#1423</span>
               <a href="https://discord.com/" className="contact__button">
-                Write me{" "}
+                Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -49,7 +58,7 @@ const Contact = () => {
         </div>
         <div className="contact__content">
           <h3 className="contact__title">Write me your project</h3>
-          <form className="contact__form">
+          <form className="contact__form" ref={form} onSubmit={sendEmail}>
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
               <input
